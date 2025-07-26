@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ania The Explorer - Discover the World Through Learning</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        'display': ['Playfair Display', 'serif'],
-                        'body': ['Inter', 'sans-serif'],
+                        'display': ['Dancing Script', 'cursive'],
+                        'body': ['Poppins', 'sans-serif'],
+                        'serif': ['Lora', 'serif'],
+                    },
+                    colors: {
+                        'soft-pink': '#fdf2f8',
+                        'warm-pink': '#f9a8d4',
+                        'soft-purple': '#f3e8ff',
+                        'soft-blue': '#eff6ff',
+                        'warm-beige': '#fef7ed',
+                        'sage': '#84cc16',
+                        'dusty-rose': '#e11d48',
                     }
                 }
             }
@@ -22,23 +32,23 @@
 </head>
 <body class="font-body text-gray-800 bg-white">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+    <nav class="fixed w-full bg-soft-pink/90 backdrop-blur-sm z-50 shadow-sm border-b border-warm-pink/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0">
-                    <h2 class="text-2xl font-display font-bold text-indigo-600">Ania The Explorer</h2>
+                    <h2 class="text-3xl font-display font-bold text-dusty-rose">Ania The Explorer</h2>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="text-gray-700 hover:text-indigo-600 transition-colors duration-200">Home</a>
-                        <a href="#about" class="text-gray-700 hover:text-indigo-600 transition-colors duration-200">About</a>
-                        <a href="#blog" class="text-gray-700 hover:text-indigo-600 transition-colors duration-200">Blog</a>
-                        <a href="#destinations" class="text-gray-700 hover:text-indigo-600 transition-colors duration-200">Destinations</a>
-                        <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition-colors duration-200">Contact</a>
+                        <a href="#home" class="font-serif text-gray-600 hover:text-dusty-rose transition-colors duration-300">Home</a>
+                        <a href="#about" class="font-serif text-gray-600 hover:text-dusty-rose transition-colors duration-300">About</a>
+                        <a href="#blog" class="font-serif text-gray-600 hover:text-dusty-rose transition-colors duration-300">Blog</a>
+                        <a href="#destinations" class="font-serif text-gray-600 hover:text-dusty-rose transition-colors duration-300">Destinations</a>
+                        <a href="#contact" class="font-serif text-gray-600 hover:text-dusty-rose transition-colors duration-300">Contact</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-gray-700 hover:text-indigo-600">
+                    <button class="text-gray-600 hover:text-dusty-rose">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
@@ -47,29 +57,29 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-16 min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="home" class="pt-20 min-h-screen bg-gradient-to-br from-soft-pink via-warm-beige to-soft-purple">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="order-2 lg:order-1">
-                    <h1 class="text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight mb-6">
+                    <h1 class="text-5xl lg:text-7xl font-display font-bold text-gray-800 leading-tight mb-8">
                         Every Journey Teaches 
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Something New</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-dusty-rose to-warm-pink">Something New</span>
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    <p class="text-xl font-serif text-gray-600 mb-10 leading-relaxed">
                         Join me as I explore the world, one lesson at a time. From the bustling streets of Bangkok to the serene mountains of Patagonia.
                     </p>
-                    <a href="#blog" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-indigo-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
+                    <a href="#blog" class="inline-block bg-gradient-to-r from-dusty-rose to-warm-pink text-white px-10 py-5 rounded-full font-serif font-medium hover:shadow-xl transform hover:scale-105 transition-all duration-300 shadow-lg">
                         Read My Stories
                     </a>
                 </div>
                 <div class="order-1 lg:order-2">
                     <div class="relative">
-                        <div class="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl p-12 text-center shadow-xl">
-                            <i class="fas fa-camera text-6xl text-indigo-300 mb-4"></i>
-                            <p class="text-gray-600 font-medium">Ania exploring Kyoto, Japan</p>
+                        <div class="bg-gradient-to-br from-soft-blue to-soft-purple rounded-3xl p-16 text-center shadow-2xl border border-white/50">
+                            <i class="fas fa-camera text-7xl text-warm-pink mb-6"></i>
+                            <p class="text-gray-600 font-serif font-medium text-lg">Ania exploring Kyoto, Japan</p>
                         </div>
-                        <div class="absolute -top-6 -right-6 w-24 h-24 bg-yellow-200 rounded-full opacity-70"></div>
-                        <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-pink-200 rounded-full opacity-70"></div>
+                        <div class="absolute -top-8 -right-8 w-32 h-32 bg-warm-pink/30 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-8 -left-8 w-24 h-24 bg-dusty-rose/20 rounded-full blur-lg"></div>
                     </div>
                 </div>
             </div>
@@ -77,39 +87,40 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-24 bg-gradient-to-br from-warm-beige to-soft-pink">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
                 <div>
-                    <h2 class="text-4xl font-display font-bold text-gray-900 mb-6">Cześć! I'm Ania</h2>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    <h2 class="text-5xl font-display font-bold text-gray-800 mb-8">Cześć! I'm Ania</h2>
+                    <p class="text-lg font-serif text-gray-600 mb-6 leading-relaxed">
                         A curious soul from Poland with an insatiable appetite for learning. What started as a solo trip to Prague in 2019 has turned into a lifelong journey of discovery.
                     </p>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    <p class="text-lg font-serif text-gray-600 mb-10 leading-relaxed">
                         I believe every destination has something unique to teach us - whether it's the art of slow living from Italian nonnas, mindfulness from Buddhist monks in Thailand, or resilience from communities rebuilding after natural disasters.
                     </p>
                     
                     <div class="grid grid-cols-3 gap-8">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-indigo-600 mb-2">23</div>
-                            <div class="text-gray-600">Countries Explored</div>
+                        <div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/50">
+                            <div class="text-4xl font-bold text-dusty-rose mb-3">23</div>
+                            <div class="text-gray-600 font-serif">Countries Explored</div>
                         </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-indigo-600 mb-2">47</div>
-                            <div class="text-gray-600">Cities Visited</div>
+                        <div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/50">
+                            <div class="text-4xl font-bold text-dusty-rose mb-3">47</div>
+                            <div class="text-gray-600 font-serif">Cities Visited</div>
                         </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-indigo-600 mb-2">∞</div>
-                            <div class="text-gray-600">Lessons Learned</div>
+                        <div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/50">
+                            <div class="text-4xl font-bold text-dusty-rose mb-3">∞</div>
+                            <div class="text-gray-600 font-serif">Lessons Learned</div>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="relative">
-                        <div class="bg-gradient-to-br from-purple-100 to-indigo-100 rounded-2xl p-12 text-center shadow-xl">
-                            <i class="fas fa-user-circle text-6xl text-indigo-300 mb-4"></i>
-                            <p class="text-gray-600 font-medium">Ania at Machu Picchu</p>
+                        <div class="bg-gradient-to-br from-soft-purple to-soft-blue rounded-3xl p-16 text-center shadow-2xl border border-white/50">
+                            <i class="fas fa-user-circle text-7xl text-warm-pink mb-6"></i>
+                            <p class="text-gray-600 font-serif font-medium text-lg">Ania at Machu Picchu</p>
                         </div>
+                        <div class="absolute -top-6 -right-6 w-28 h-28 bg-dusty-rose/20 rounded-full blur-lg"></div>
                     </div>
                 </div>
             </div>
@@ -117,27 +128,27 @@
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="py-20 bg-gray-50">
+    <section id="blog" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-display font-bold text-center text-gray-900 mb-16">Latest Adventures</h2>
+            <h2 class="text-5xl font-display font-bold text-center text-gray-800 mb-20">Latest Adventures</h2>
             
             <div class="grid lg:grid-cols-3 gap-8">
                 <!-- Featured Post -->
                 <div class="lg:col-span-2">
-                    <article class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <article class="bg-gradient-to-br from-soft-pink to-warm-beige rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300 border border-white/50">
                         <div class="relative">
-                            <div class="bg-gradient-to-br from-green-100 to-blue-100 h-64 flex items-center justify-center">
-                                <i class="fas fa-mountain text-6xl text-green-400"></i>
+                            <div class="bg-gradient-to-br from-sage/20 to-soft-blue h-72 flex items-center justify-center">
+                                <i class="fas fa-mountain text-7xl text-sage"></i>
                             </div>
-                            <span class="absolute top-4 left-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Featured</span>
+                            <span class="absolute top-6 left-6 bg-gradient-to-r from-dusty-rose to-warm-pink text-white px-4 py-2 rounded-full text-sm font-serif font-medium">Featured</span>
                         </div>
-                        <div class="p-8">
-                            <span class="text-indigo-600 font-semibold">Nepal</span>
-                            <h3 class="text-2xl font-display font-bold text-gray-900 mt-2 mb-4">Finding Strength in the Himalayas</h3>
-                            <p class="text-gray-600 mb-6 leading-relaxed">
+                        <div class="p-10">
+                            <span class="text-dusty-rose font-serif font-semibold text-lg">Nepal</span>
+                            <h3 class="text-3xl font-display font-bold text-gray-800 mt-3 mb-6">Finding Strength in the Himalayas</h3>
+                            <p class="text-gray-600 font-serif mb-8 leading-relaxed text-lg">
                                 Three weeks trekking to Everest Base Camp taught me more about mental resilience than any book ever could. Here's what the mountains whispered...
                             </p>
-                            <div class="flex items-center justify-between text-sm text-gray-500">
+                            <div class="flex items-center justify-between text-sm text-gray-500 font-serif">
                                 <span>March 15, 2024</span>
                                 <span>8 min read</span>
                             </div>
@@ -146,35 +157,35 @@
                 </div>
 
                 <!-- Side Posts -->
-                <div class="space-y-8">
-                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div class="bg-gradient-to-br from-orange-100 to-red-100 h-32 flex items-center justify-center">
-                            <i class="fas fa-utensils text-3xl text-orange-400"></i>
+                <div class="space-y-10">
+                    <article class="bg-gradient-to-br from-warm-beige to-soft-purple rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-white/50">
+                        <div class="bg-gradient-to-br from-orange-200/50 to-dusty-rose/30 h-40 flex items-center justify-center">
+                            <i class="fas fa-utensils text-4xl text-dusty-rose"></i>
                         </div>
-                        <div class="p-6">
-                            <span class="text-indigo-600 font-semibold text-sm">Italy</span>
-                            <h3 class="text-lg font-display font-bold text-gray-900 mt-1 mb-3">Nonna's Kitchen Philosophy</h3>
-                            <p class="text-gray-600 text-sm mb-4">
+                        <div class="p-8">
+                            <span class="text-dusty-rose font-serif font-semibold">Italy</span>
+                            <h3 class="text-xl font-display font-bold text-gray-800 mt-2 mb-4">Nonna's Kitchen Philosophy</h3>
+                            <p class="text-gray-600 font-serif mb-6 leading-relaxed">
                                 Cooking with an 87-year-old grandmother in Tuscany revealed the secret ingredient missing from my life...
                             </p>
-                            <div class="flex items-center justify-between text-xs text-gray-500">
+                            <div class="flex items-center justify-between text-sm text-gray-500 font-serif">
                                 <span>Feb 28, 2024</span>
                                 <span>5 min read</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div class="bg-gradient-to-br from-green-100 to-teal-100 h-32 flex items-center justify-center">
-                            <i class="fas fa-leaf text-3xl text-green-400"></i>
+                    <article class="bg-gradient-to-br from-soft-blue to-sage/20 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-white/50">
+                        <div class="bg-gradient-to-br from-sage/30 to-soft-blue h-40 flex items-center justify-center">
+                            <i class="fas fa-leaf text-4xl text-sage"></i>
                         </div>
-                        <div class="p-6">
-                            <span class="text-indigo-600 font-semibold text-sm">Costa Rica</span>
-                            <h3 class="text-lg font-display font-bold text-gray-900 mt-1 mb-3">Digital Detox in the Rainforest</h3>
-                            <p class="text-gray-600 text-sm mb-4">
+                        <div class="p-8">
+                            <span class="text-dusty-rose font-serif font-semibold">Costa Rica</span>
+                            <h3 class="text-xl font-display font-bold text-gray-800 mt-2 mb-4">Digital Detox in the Rainforest</h3>
+                            <p class="text-gray-600 font-serif mb-6 leading-relaxed">
                                 Seven days without internet in Manuel Antonio National Park. What I discovered about connection...
                             </p>
-                            <div class="flex items-center justify-between text-xs text-gray-500">
+                            <div class="flex items-center justify-between text-sm text-gray-500 font-serif">
                                 <span>Jan 12, 2024</span>
                                 <span>6 min read</span>
                             </div>
@@ -186,55 +197,55 @@
     </section>
 
     <!-- Destinations Section -->
-    <section id="destinations" class="py-20 bg-white">
+    <section id="destinations" class="py-24 bg-gradient-to-br from-soft-purple to-warm-beige">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-display font-bold text-center text-gray-900 mb-16">Destinations Map</h2>
+            <h2 class="text-5xl font-display font-bold text-center text-gray-800 mb-20">Destinations Map</h2>
             
-            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-12 text-center shadow-xl">
-                <i class="fas fa-map-marked-alt text-6xl text-indigo-300 mb-6"></i>
-                <p class="text-xl text-gray-600 mb-8">Interactive travel map coming soon...</p>
+            <div class="bg-white/70 backdrop-blur-sm rounded-3xl p-16 text-center shadow-2xl border border-white/50">
+                <i class="fas fa-map-marked-alt text-7xl text-warm-pink mb-8"></i>
+                <p class="text-xl font-serif text-gray-600 mb-12">Interactive travel map coming soon...</p>
                 
-                <div class="flex flex-wrap justify-center gap-4">
-                    <span class="bg-white px-4 py-2 rounded-full shadow-md text-gray-700">🇳🇵 Nepal</span>
-                    <span class="bg-white px-4 py-2 rounded-full shadow-md text-gray-700">🇮🇹 Italy</span>
-                    <span class="bg-white px-4 py-2 rounded-full shadow-md text-gray-700">🇨🇷 Costa Rica</span>
-                    <span class="bg-white px-4 py-2 rounded-full shadow-md text-gray-700">🇯🇵 Japan</span>
-                    <span class="bg-white px-4 py-2 rounded-full shadow-md text-gray-700">🇹🇭 Thailand</span>
-                    <span class="bg-white px-4 py-2 rounded-full shadow-md text-gray-700">🇵🇱 Poland</span>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <span class="bg-gradient-to-r from-dusty-rose to-warm-pink text-white px-6 py-3 rounded-full shadow-lg font-serif font-medium hover:shadow-xl transition-shadow duration-300">🇳🇵 Nepal</span>
+                    <span class="bg-gradient-to-r from-dusty-rose to-warm-pink text-white px-6 py-3 rounded-full shadow-lg font-serif font-medium hover:shadow-xl transition-shadow duration-300">🇮🇹 Italy</span>
+                    <span class="bg-gradient-to-r from-dusty-rose to-warm-pink text-white px-6 py-3 rounded-full shadow-lg font-serif font-medium hover:shadow-xl transition-shadow duration-300">🇨🇷 Costa Rica</span>
+                    <span class="bg-gradient-to-r from-dusty-rose to-warm-pink text-white px-6 py-3 rounded-full shadow-lg font-serif font-medium hover:shadow-xl transition-shadow duration-300">🇯🇵 Japan</span>
+                    <span class="bg-gradient-to-r from-dusty-rose to-warm-pink text-white px-6 py-3 rounded-full shadow-lg font-serif font-medium hover:shadow-xl transition-shadow duration-300">🇹🇭 Thailand</span>
+                    <span class="bg-gradient-to-r from-dusty-rose to-warm-pink text-white px-6 py-3 rounded-full shadow-lg font-serif font-medium hover:shadow-xl transition-shadow duration-300">🇵🇱 Poland</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900 text-white">
+    <section id="contact" class="py-24 bg-gradient-to-br from-dusty-rose to-warm-pink text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-display font-bold mb-6">Let's Connect</h2>
-            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+            <h2 class="text-5xl font-display font-bold mb-8">Let's Connect</h2>
+            <p class="text-xl font-serif mb-16 max-w-2xl mx-auto leading-relaxed">
                 Have a travel story to share? Want to recommend a hidden gem? I'd love to hear from you!
             </p>
             
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-8">
-                <a href="mailto:hello@aniaexplorer.com" class="flex items-center gap-3 text-white hover:text-indigo-300 transition-colors duration-200">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-12">
+                <a href="mailto:hello@aniaexplorer.com" class="flex items-center gap-4 text-white hover:text-white/80 transition-all duration-300 bg-white/20 backdrop-blur-sm rounded-full px-8 py-4 border border-white/30 hover:bg-white/30">
                     <i class="fas fa-envelope text-xl"></i>
-                    <span class="text-lg">hello@aniaexplorer.com</span>
+                    <span class="text-lg font-serif">hello@aniaexplorer.com</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 text-white hover:text-indigo-300 transition-colors duration-200">
+                <a href="#" class="flex items-center gap-4 text-white hover:text-white/80 transition-all duration-300 bg-white/20 backdrop-blur-sm rounded-full px-8 py-4 border border-white/30 hover:bg-white/30">
                     <i class="fab fa-instagram text-xl"></i>
-                    <span class="text-lg">@aniatheexplorer</span>
+                    <span class="text-lg font-serif">@aniatheexplorer</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 text-white hover:text-indigo-300 transition-colors duration-200">
+                <a href="#" class="flex items-center gap-4 text-white hover:text-white/80 transition-all duration-300 bg-white/20 backdrop-blur-sm rounded-full px-8 py-4 border border-white/30 hover:bg-white/30">
                     <i class="fab fa-youtube text-xl"></i>
-                    <span class="text-lg">Ania The Explorer</span>
+                    <span class="text-lg font-serif">Ania The Explorer</span>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-8">
+    <footer class="bg-gray-800 text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2024 Ania The Explorer. Made with ❤️ for fellow wanderers.</p>
+            <p class="font-serif text-lg">&copy; 2024 Ania The Explorer. Made with ❤️ for fellow wanderers.</p>
         </div>
     </footer>
 
